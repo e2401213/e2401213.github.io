@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Miku AKUTSU">
+    <meta name="keywords" content="html, css, javascript">
+
+    <!-- javascriptをheadタグ内で読み込む場合は defer 属性を使う -->
+    <script src="./js/main.js" defer></script>
+
+    <!-- HTMLを操作しない場合は async で非同期に読み込むことも可能 -->
+    <!-- <script src="./js/main.js" async></script> -->
+
+    <title>11週目 ｜ 大学生のための情報・デジタルリテラシー</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>大学生のための情報・デジタルリテラシー</h1>
+        <nav>
+            ホーム
+            タグリファレンス
+            問い合わせ
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Javascript(if, for, while)</h2>
+
+            <!-- HTMLからJavascriptの関数を実行する -->
+            <!-- ボタンとonclick属性を使うのが一番簡単 -->
+            <button onclick="sayHello(0)">日本語</button>
+            <button onclick="sayHello(1)">英語</button>
+            <button onclick="sayHello(2)">フランス語</button>
+            <button onclick="sayHello(3)">スペイン語</button>
+            <button onclick="sayHello(4)">中国語</button>
+
+            <!-- いろいろな言語の挨拶を表示(Javascript側から操作する) -->
+            <p id="say_hello">ここに各言語の挨拶が表示されます.</p>
+        </section>
+    </main>
+
+    <footer>
+        Copyright &copy; Miku Akutsu, All Rights Reserved.
+    </footer>
+
+    <!-- HTMLファイルに直接javascriptを記述する場合 -->
+    <script>
+        // alert(); ブラウザポップアップを表示する関数
+        // alert("Hello World !");
+
+        // HTMLをjavascriptで操作する
+        // const mohumohu = document.querySelector("p");
+        // mohumohu.textContent = "Hello World !!";
+
+        // ブラウザコンソールにログとして出力する関数
+        // console.log("Hello World !!!");
+    </script>
+
+    <!-- <script src="./js/main.js"></script> -->
+
+</body>
+
+</html>
